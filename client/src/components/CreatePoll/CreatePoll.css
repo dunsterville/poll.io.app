@@ -2,11 +2,26 @@
     background-color:#7B68EE !important;
 }
 
-
 .buttonStylesSelected {
     background-color:rgb(58, 48, 114) !important;
 }
+
 .badge{
     height: 20px;
     width: 40px;
+}
+
+.buttonStyles.removeBtn {
+  position: relative;
+  left: calc(100% - 38px);
+  top: -38px;
+  background-color: #FF647C !important;
+  border: 0;
+  height: 38px;
+  width: 38px;
+  border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
 }

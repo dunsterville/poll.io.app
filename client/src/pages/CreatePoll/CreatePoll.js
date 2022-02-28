@@ -73,6 +73,12 @@ const CreatePoll = _ => {
         setCreatePollState({ ...createPollState, isDropdownOpen: !createPollState.isDropdownOpen })
     }
 
+    createPollState.handleRemoveOption = index => {
+      let options = JSON.parse(JSON.stringify(createPollState.options))
+      options.splice(index, 1)
+      setCreatePollState({...createPollState, options})
+    }
+
     return (
         <CreatePollContext.Provider value={createPollState}>
             <Menu />
