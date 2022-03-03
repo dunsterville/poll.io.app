@@ -6,14 +6,14 @@ Poll.io uses passport authentication for user sign up, and connects users to a s
 
 ## Install
 
-Git clone the repo [here](https://github.com/TravisWHouston/Project-3.git)
+Git clone the original repo [here](https://github.com/TravisWHouston/Project-3.git) (had create a new repo to redeploy the app)
 
 Navigate to both the root folder and the client folder "npm install" to install the required dependencies.
 
 Navigate to root directory and "npm start" to start client.
 
 ## Deployment
-You can see a deployed version [here](https://p0ll-io.herokuapp.com/).
+You can see a deployed version [here](https://pollioapp.herokuapp.com/).
 
 ## Built With
 * React
