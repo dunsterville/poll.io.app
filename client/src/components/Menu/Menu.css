@@ -81,11 +81,20 @@ p.email {
   height: 60px;
 }
 
+.bm-item.account {
+  position: absolute;
+  border-bottom: 0;
+  font-size: 12px;
+  bottom: 70px;
+  height: auto;
+}
+
 .bm-item.logout {
   position: absolute;
   border-bottom: 0;
   font-size: 12px;
   bottom: 40px;
+  height: auto;
 }
 
 /* Change color on hover */

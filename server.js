@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'production') {
 require('mongoose')
   .connect(process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost:27017/polls', {
     useCreateIndex: true,
-    useFindAndModify: true,
+    useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
   })

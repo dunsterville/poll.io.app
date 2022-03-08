@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import SignUpComp from '../../components/SignUp'
-import UserContext from '../../utils/Usercontext'
+import UserContext from '../../utils/UserContext'
 import PollAPI from '../../utils/PollAPI'
 
 const { registerUser, usernameAvailable, authorize } = PollAPI

@@ -2,6 +2,7 @@ const { User } = require('../models')
 const jwt = require('jsonwebtoken')
 const passport = require('passport')
 const crypto = require('crypto')
+const cloudinary = require('./cloudinary')
 
 module.exports = app => {
   // Register User
@@ -26,6 +27,29 @@ module.exports = app => {
           process.env.SECRET)
         } : user)
       })
+  })
+
+  // Update User
+  app.put('/api/user/:id', (req, res) => {
+    // Generate gravatar img link
+    User.findByIdAndUpdate(req.params.id, req.body)
+      .then(() => res.sendStatus(200))
+      .catch(err => console.error(err))
+  })
+
+  // Upload Avatar
+  app.post('/api/upload/avatar', (req, res) => {
+    cloudinary.v2.uploader.upload(req.body.image,
+      {
+        public_id: req.body.user
+      },
+      function (error, result) {
+        if (error) {
+          console.error(error)
+        }
+        res.json(result);
+      }
+    )
   })
 
   // Login User

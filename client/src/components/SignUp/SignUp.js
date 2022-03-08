@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Button, Form, FormGroup, Label, Input, Container, Jumbotron } from 'reactstrap'
-import UserContext from '../../utils/Usercontext'
+import UserContext from '../../utils/UserContext'
 import './SignUp.css'
 const SignUpComp = _ => {
 

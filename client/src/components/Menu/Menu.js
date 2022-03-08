@@ -43,6 +43,7 @@ const Menu = () => {
       <a className="menu-item" href="/explore"><img src={compass} alt="Compass icon"/><h5>Explore</h5><img src={rightChevron} alt="right chevron"/></a>
       <a className="menu-item" href="/mypolls"><img src={poll} alt="Poll icon"/><h5>My Polls</h5><img src={rightChevron} alt="right chevron"/></a>
       <a className="menu-item" href="/createpoll"><img src={create} alt="Create icon"/><h5>Create a Poll</h5><img src={rightChevron} alt="right chevron"/></a>
+      <a className="account" href="/account">Account</a>
       <a className="logout" onClick={userState.logout} href="/signin">Logout</a>
     </Nav>
   )

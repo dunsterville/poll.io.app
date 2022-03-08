@@ -8,6 +8,7 @@ import CreatePoll from './pages/CreatePoll'
 import PollPage from './pages/PollPage'
 import ResultsPage from './pages/ResultsPage'
 import MyPollsPage from './pages/MyPollsPage'
+import AccountPage from './pages/AccountPage'
 import PollAPI from './utils/PollAPI'
 
 const { authorize } = PollAPI
@@ -45,6 +46,9 @@ const App = () => {
             </Route>
             <Route exact path='/mypolls'>
               <MyPollsPage />
+            </Route>
+            <Route exact path='/account'>
+              <AccountPage />  
             </Route>
           </> : <Redirect to='/signin' />
         }

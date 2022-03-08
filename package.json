@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/TravisWHouston/Project-3#readme",
   "dependencies": {
+    "cloudinary": "^1.28.1",
     "concurrently": "^5.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
